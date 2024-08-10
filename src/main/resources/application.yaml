@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: AITelegramBot
+
+langchain4j:
+  open-ai:
+    chat-model:
+      model-name: "gpt-3.5-turbo"
+      api-key: ${OPEN_AI_KEY}
+
+open-ai:
+  whisper:
+    model: "whisper-1"
+    transcription-url: https://api.openai.com/v1/audio/transcriptions
+
+telegram:
+  bot:
+    name: ${BOT_NAME}
+    token: ${BOT_TOKEN}
